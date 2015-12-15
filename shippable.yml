@@ -11,11 +11,10 @@ python:
  - "pypy3"
 #services: 
  #- redis
-#build_image: drydock/u12pyt:prod
+build_image: drydock/u12pytpls:tip
 install: pip install -r requirements.txt
 script:
  - python sample.py
 notifications:
   email:
     - varsha@shippable.com
-    
